@@ -47,7 +47,12 @@
     --color-greenlantern: #2E4F21;
     --color-greenlime: #8cc63e;
     --color-greenpick: #009444;
-    --font-PoppinsMedium: PoppinsMedium, "sans-serif";
+    --font-Helvetica: Helvetica, "sans-serif";
+    --font-HelveticaRoundedBold: HelveticaRoundedBold, "sans-serif";
+    --font-HelveticaOblique: HelveticaOblique, "sans-serif";
+    --font-HelveticaLight: HelveticaLight, "sans-serif";
+    --font-HelveticaBold: HelveticaBold, "sans-serif";
+    --font-HelveticaCompressed: HelveticaCompressed, "sans-serif";
   }
 }
 @layer base {
@@ -371,6 +376,9 @@
   .items-end {
     align-items: flex-end;
   }
+  .items-start {
+    align-items: flex-start;
+  }
   .justify-center {
     justify-content: center;
   }
@@ -505,8 +513,23 @@
   .text-right {
     text-align: right;
   }
-  .font-PoppinsMedium {
-    font-family: var(--font-PoppinsMedium);
+  .font-Helvetica {
+    font-family: var(--font-Helvetica);
+  }
+  .font-HelveticaBold {
+    font-family: var(--font-HelveticaBold);
+  }
+  .font-HelveticaCompressed {
+    font-family: var(--font-HelveticaCompressed);
+  }
+  .font-HelveticaLight {
+    font-family: var(--font-HelveticaLight);
+  }
+  .font-HelveticaOblique {
+    font-family: var(--font-HelveticaOblique);
+  }
+  .font-HelveticaRoundedBold {
+    font-family: var(--font-HelveticaRoundedBold);
   }
   .text-3xl {
     font-size: var(--text-3xl);
@@ -713,14 +736,6 @@
       @container (width >= 24rem) {
         font-size: var(--text-base);
         line-height: var(--tw-leading, var(--text-base--line-height));
-      }
-    }
-  }
-  .\@xs\:\@sm\:text-xl {
-    @container (width >= 20rem) {
-      @container (width >= 24rem) {
-        font-size: var(--text-xl);
-        line-height: var(--tw-leading, var(--text-xl--line-height));
       }
     }
   }
@@ -1347,18 +1362,6 @@
       }
     }
   }
-  .\@md\:\@lg\:\@xl\:\@2xl\:text-4xl {
-    @container (width >= 28rem) {
-      @container (width >= 32rem) {
-        @container (width >= 36rem) {
-          @container (width >= 42rem) {
-            font-size: var(--text-4xl);
-            line-height: var(--tw-leading, var(--text-4xl--line-height));
-          }
-        }
-      }
-    }
-  }
   .\@md\:\@lg\:\@xl\:\@2xl\:text-lg {
     @container (width >= 28rem) {
       @container (width >= 32rem) {
@@ -1413,20 +1416,32 @@
   }
 }
 @font-face {
-  font-family: 'BebasNeue';
-  src: url('../fonts/BebasNeue-Regular.woff') format('woff'), url('../fonts/BebasNeue-Regular.woff2') format('woff2');
+  font-family: 'HelveticaBold';
+  src: url('../fonts/Helvetica-Bold.woff') format('woff'), url('../fonts/Helvetica-Bold.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'PoppinsMedium';
-  src: url('../fonts/Poppins-Medium.woff2') format('woff2');
+  font-family: 'HelveticaBoldOblique';
+  src: url('../fonts/Helvetica-BoldOblique.woff') format('woff'), url('../fonts/Helvetica-BoldOblique.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'PoppinsRegular';
-  src: url('../fonts/Poppins-Regular.woff2') format('woff2');
+  font-family: 'HelveticaCompressed';
+  src: url('../fonts/helvetica-compressed.woff') format('woff'), url('../fonts/helvetica-compressed.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'PoppinsBold';
-  src: url('../fonts/Poppins-Bold.woff2') format('woff2');
+  font-family: 'HelveticaLight';
+  src: url('../fonts/helvetica-light.woff') format('woff'), url('../fonts/helvetica-light.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'HelveticaOblique';
+  src: url('../fonts/Helvetica-Oblique.woff') format('woff'), url('../fonts/Helvetica-Oblique.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'HelveticaRoundedBold';
+  src: url('../fonts/helvetica-rounded-bold.woff') format('woff'), url('../fonts/helvetica-rounded-bold.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../fonts/Helvetica.woff') format('woff'), url('../fonts/Helvetica.woff2') format('woff2');
 }
 @media (hover: hover) {
   .hover\:underline:hover {
