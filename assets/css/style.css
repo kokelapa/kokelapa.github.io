@@ -376,9 +376,6 @@
   .items-end {
     align-items: flex-end;
   }
-  .items-start {
-    align-items: flex-start;
-  }
   .justify-center {
     justify-content: center;
   }
@@ -518,18 +515,6 @@
   }
   .font-HelveticaBold {
     font-family: var(--font-HelveticaBold);
-  }
-  .font-HelveticaCompressed {
-    font-family: var(--font-HelveticaCompressed);
-  }
-  .font-HelveticaLight {
-    font-family: var(--font-HelveticaLight);
-  }
-  .font-HelveticaOblique {
-    font-family: var(--font-HelveticaOblique);
-  }
-  .font-HelveticaRoundedBold {
-    font-family: var(--font-HelveticaRoundedBold);
   }
   .text-3xl {
     font-size: var(--text-3xl);
