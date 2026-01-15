@@ -48,11 +48,7 @@
     --color-greenlime: #8cc63e;
     --color-greenpick: #009444;
     --font-Helvetica: Helvetica, "sans-serif";
-    --font-HelveticaRoundedBold: HelveticaRoundedBold, "sans-serif";
-    --font-HelveticaOblique: HelveticaOblique, "sans-serif";
-    --font-HelveticaLight: HelveticaLight, "sans-serif";
     --font-HelveticaBold: HelveticaBold, "sans-serif";
-    --font-HelveticaCompressed: HelveticaCompressed, "sans-serif";
   }
 }
 @layer base {
